@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F2DE3891CF100B7002E0AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3881CF100B7002E0AB5 /* AppDelegate.swift */; };
+		3F2DE38B1CF100B7002E0AB5 /* LogInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE38A1CF100B7002E0AB5 /* LogInSignUpViewController.swift */; };
+		3F2DE38E1CF100B7002E0AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2DE38C1CF100B7002E0AB5 /* Main.storyboard */; };
+		3F2DE3911CF100B7002E0AB5 /* FindGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE38F1CF100B7002E0AB5 /* FindGame.xcdatamodeld */; };
+		3F2DE3931CF100B7002E0AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2DE3921CF100B7002E0AB5 /* Assets.xcassets */; };
+		3F2DE3961CF100B7002E0AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2DE3941CF100B7002E0AB5 /* LaunchScreen.storyboard */; };
+		3F2DE3A11CF100B7002E0AB5 /* FindGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3A01CF100B7002E0AB5 /* FindGameTests.swift */; };
+		3F2DE3AC1CF100FC002E0AB5 /* MGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3AB1CF100FC002E0AB5 /* MGBaseViewController.swift */; };
+		3F2DE3AE1CF1102C002E0AB5 /* MGWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3AD1CF1102C002E0AB5 /* MGWallViewController.swift */; };
+		3F2DE3B01CF11F20002E0AB5 /* MGProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3AF1CF11F20002E0AB5 /* MGProfileViewController.swift */; };
+		3F2DE3B21CF1306D002E0AB5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3B11CF1306D002E0AB5 /* TableViewCell.swift */; };
+		3F2DE3B41CF13077002E0AB5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DE3B31CF13077002E0AB5 /* Helpers.swift */; };
+		3F9D75CB1D0859CD0052557D /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D75CA1D0859CD0052557D /* Schedule.storyboard */; };
+		3F9D75CD1D08602F0052557D /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D75CC1D08602F0052557D /* NewEventViewController.swift */; };
+		3FB6674E1D164E3300012FF0 /* MGTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6674D1D164E3300012FF0 /* MGTeamViewController.swift */; };
+		3FD8F23B1D051A5400003FDF /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8F23A1D051A5400003FDF /* Photos.plist */; };
+		3FD8F23D1D051A6500003FDF /* PhotoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8F23C1D051A6500003FDF /* PhotoStreamViewController.swift */; };
+		3FD8F23F1D051A6C00003FDF /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8F23E1D051A6C00003FDF /* UIImage+Decompression.swift */; };
+		3FD8F2411D051A7500003FDF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8F2401D051A7500003FDF /* Photo.swift */; };
+		3FD8F2431D051A9B00003FDF /* AnnotatedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8F2421D051A9B00003FDF /* AnnotatedPhotoCell.swift */; };
+		3FD8F2451D051AA000003FDF /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8F2441D051AA000003FDF /* RoundedCornersView.swift */; };
+		3FEA9DAF1D2B1B3C00D266BC /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9D9E1D2B1B3C00D266BC /* photo-frame.png */; };
+		3FEA9DB01D2B1B3C00D266BC /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9D9F1D2B1B3C00D266BC /* white_chocolate_donut.jpg */; };
+		3FEA9DB11D2B1B3C00D266BC /* ham_and_egg_sandwich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA01D2B1B3C00D266BC /* ham_and_egg_sandwich.jpg */; };
+		3FEA9DB21D2B1B3C00D266BC /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA11D2B1B3C00D266BC /* hamburger.jpg */; };
+		3FEA9DB31D2B1B3C00D266BC /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA21D2B1B3C00D266BC /* egg_benedict.jpg */; };
+		3FEA9DB41D2B1B3C00D266BC /* ham_and_cheese_panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA31D2B1B3C00D266BC /* ham_and_cheese_panini.jpg */; };
+		3FEA9DB51D2B1B3C00D266BC /* mushroom_risotto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA41D2B1B3C00D266BC /* mushroom_risotto.jpg */; };
+		3FEA9DB61D2B1B3C00D266BC /* full_breakfast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA51D2B1B3C00D266BC /* full_breakfast.jpg */; };
+		3FEA9DB71D2B1B3C00D266BC /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA61D2B1B3C00D266BC /* creme_brelee.jpg */; };
+		3FEA9DB81D2B1B3C00D266BC /* starbucks_coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA71D2B1B3C00D266BC /* starbucks_coffee.jpg */; };
+		3FEA9DB91D2B1B3C00D266BC /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA81D2B1B3C00D266BC /* vegetable_curry.jpg */; };
+		3FEA9DBA1D2B1B3C00D266BC /* japanese_noodle_with_pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DA91D2B1B3C00D266BC /* japanese_noodle_with_pork.jpg */; };
+		3FEA9DBB1D2B1B3C00D266BC /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DAA1D2B1B3C00D266BC /* thai_shrimp_cake.jpg */; };
+		3FEA9DBC1D2B1B3C00D266BC /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DAB1D2B1B3C00D266BC /* angry_birds_cake.jpg */; };
+		3FEA9DBD1D2B1B3C00D266BC /* green_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DAC1D2B1B3C00D266BC /* green_tea.jpg */; };
+		3FEA9DBE1D2B1B3C00D266BC /* instant_noodle_with_egg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DAD1D2B1B3C00D266BC /* instant_noodle_with_egg.jpg */; };
+		3FEA9DBF1D2B1B3C00D266BC /* noodle_with_bbq_pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA9DAE1D2B1B3C00D266BC /* noodle_with_bbq_pork.jpg */; };
+		3FFFE78B1CF5652300855CAD /* MGSchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFE78A1CF5652300855CAD /* MGSchedulingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F2DE39D1CF100B7002E0AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F2DE37D1CF100B7002E0AB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2DE3841CF100B7002E0AB5;
+			remoteInfo = FindGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F2DE3851CF100B7002E0AB5 /* FindGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2DE3881CF100B7002E0AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F2DE38A1CF100B7002E0AB5 /* LogInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInSignUpViewController.swift; sourceTree = "<group>"; };
+		3F2DE38D1CF100B7002E0AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F2DE3901CF100B7002E0AB5 /* FindGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindGame.xcdatamodel; sourceTree = "<group>"; };
+		3F2DE3921CF100B7002E0AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F2DE3951CF100B7002E0AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F2DE3971CF100B7002E0AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2DE39C1CF100B7002E0AB5 /* FindGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2DE3A01CF100B7002E0AB5 /* FindGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameTests.swift; sourceTree = "<group>"; };
+		3F2DE3A21CF100B7002E0AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2DE3AB1CF100FC002E0AB5 /* MGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGBaseViewController.swift; sourceTree = "<group>"; };
+		3F2DE3AD1CF1102C002E0AB5 /* MGWallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGWallViewController.swift; sourceTree = "<group>"; };
+		3F2DE3AF1CF11F20002E0AB5 /* MGProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGProfileViewController.swift; sourceTree = "<group>"; };
+		3F2DE3B11CF1306D002E0AB5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3F2DE3B31CF13077002E0AB5 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		3F9D75CA1D0859CD0052557D /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		3F9D75CC1D08602F0052557D /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		3FB6674D1D164E3300012FF0 /* MGTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGTeamViewController.swift; sourceTree = "<group>"; };
+		3FD8F23A1D051A5400003FDF /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		3FD8F23C1D051A6500003FDF /* PhotoStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStreamViewController.swift; sourceTree = "<group>"; };
+		3FD8F23E1D051A6C00003FDF /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
+		3FD8F2401D051A7500003FDF /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3FD8F2421D051A9B00003FDF /* AnnotatedPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedPhotoCell.swift; sourceTree = "<group>"; };
+		3FD8F2441D051AA000003FDF /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		3FEA9D9E1D2B1B3C00D266BC /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
+		3FEA9D9F1D2B1B3C00D266BC /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		3FEA9DA01D2B1B3C00D266BC /* ham_and_egg_sandwich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_egg_sandwich.jpg; sourceTree = "<group>"; };
+		3FEA9DA11D2B1B3C00D266BC /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpg; sourceTree = "<group>"; };
+		3FEA9DA21D2B1B3C00D266BC /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
+		3FEA9DA31D2B1B3C00D266BC /* ham_and_cheese_panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_cheese_panini.jpg; sourceTree = "<group>"; };
+		3FEA9DA41D2B1B3C00D266BC /* mushroom_risotto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mushroom_risotto.jpg; sourceTree = "<group>"; };
+		3FEA9DA51D2B1B3C00D266BC /* full_breakfast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = full_breakfast.jpg; sourceTree = "<group>"; };
+		3FEA9DA61D2B1B3C00D266BC /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
+		3FEA9DA71D2B1B3C00D266BC /* starbucks_coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starbucks_coffee.jpg; sourceTree = "<group>"; };
+		3FEA9DA81D2B1B3C00D266BC /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
+		3FEA9DA91D2B1B3C00D266BC /* japanese_noodle_with_pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japanese_noodle_with_pork.jpg; sourceTree = "<group>"; };
+		3FEA9DAA1D2B1B3C00D266BC /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
+		3FEA9DAB1D2B1B3C00D266BC /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_birds_cake.jpg; sourceTree = "<group>"; };
+		3FEA9DAC1D2B1B3C00D266BC /* green_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_tea.jpg; sourceTree = "<group>"; };
+		3FEA9DAD1D2B1B3C00D266BC /* instant_noodle_with_egg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = instant_noodle_with_egg.jpg; sourceTree = "<group>"; };
+		3FEA9DAE1D2B1B3C00D266BC /* noodle_with_bbq_pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noodle_with_bbq_pork.jpg; sourceTree = "<group>"; };
+		3FFFE78A1CF5652300855CAD /* MGSchedulingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGSchedulingViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F2DE3821CF100B7002E0AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2DE3991CF100B7002E0AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F2DE37C1CF100B7002E0AB5 = {
+			isa = PBXGroup;
+			children = (
+				3F2DE3871CF100B7002E0AB5 /* FindGame */,
+				3F2DE39F1CF100B7002E0AB5 /* FindGameTests */,
+				3F2DE3861CF100B7002E0AB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F2DE3861CF100B7002E0AB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F2DE3851CF100B7002E0AB5 /* FindGame.app */,
+				3F2DE39C1CF100B7002E0AB5 /* FindGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F2DE3871CF100B7002E0AB5 /* FindGame */ = {
+			isa = PBXGroup;
+			children = (
+				3FEA9D9E1D2B1B3C00D266BC /* photo-frame.png */,
+				3FEA9D9F1D2B1B3C00D266BC /* white_chocolate_donut.jpg */,
+				3FEA9DA01D2B1B3C00D266BC /* ham_and_egg_sandwich.jpg */,
+				3FEA9DA11D2B1B3C00D266BC /* hamburger.jpg */,
+				3FEA9DA21D2B1B3C00D266BC /* egg_benedict.jpg */,
+				3FEA9DA31D2B1B3C00D266BC /* ham_and_cheese_panini.jpg */,
+				3FEA9DA41D2B1B3C00D266BC /* mushroom_risotto.jpg */,
+				3FEA9DA51D2B1B3C00D266BC /* full_breakfast.jpg */,
+				3FEA9DA61D2B1B3C00D266BC /* creme_brelee.jpg */,
+				3FEA9DA71D2B1B3C00D266BC /* starbucks_coffee.jpg */,
+				3FEA9DA81D2B1B3C00D266BC /* vegetable_curry.jpg */,
+				3FEA9DA91D2B1B3C00D266BC /* japanese_noodle_with_pork.jpg */,
+				3FEA9DAA1D2B1B3C00D266BC /* thai_shrimp_cake.jpg */,
+				3FEA9DAB1D2B1B3C00D266BC /* angry_birds_cake.jpg */,
+				3FEA9DAC1D2B1B3C00D266BC /* green_tea.jpg */,
+				3FEA9DAD1D2B1B3C00D266BC /* instant_noodle_with_egg.jpg */,
+				3FEA9DAE1D2B1B3C00D266BC /* noodle_with_bbq_pork.jpg */,
+				3FD8F2441D051AA000003FDF /* RoundedCornersView.swift */,
+				3FD8F2421D051A9B00003FDF /* AnnotatedPhotoCell.swift */,
+				3FD8F2401D051A7500003FDF /* Photo.swift */,
+				3FD8F23E1D051A6C00003FDF /* UIImage+Decompression.swift */,
+				3FD8F23A1D051A5400003FDF /* Photos.plist */,
+				3FD8F23C1D051A6500003FDF /* PhotoStreamViewController.swift */,
+				3F2DE3881CF100B7002E0AB5 /* AppDelegate.swift */,
+				3F2DE38A1CF100B7002E0AB5 /* LogInSignUpViewController.swift */,
+				3F2DE3AB1CF100FC002E0AB5 /* MGBaseViewController.swift */,
+				3F2DE3B11CF1306D002E0AB5 /* TableViewCell.swift */,
+				3F2DE3B31CF13077002E0AB5 /* Helpers.swift */,
+				3F2DE38C1CF100B7002E0AB5 /* Main.storyboard */,
+				3F2DE3921CF100B7002E0AB5 /* Assets.xcassets */,
+				3F2DE3941CF100B7002E0AB5 /* LaunchScreen.storyboard */,
+				3F2DE3971CF100B7002E0AB5 /* Info.plist */,
+				3F2DE38F1CF100B7002E0AB5 /* FindGame.xcdatamodeld */,
+				3F2DE3AD1CF1102C002E0AB5 /* MGWallViewController.swift */,
+				3F2DE3AF1CF11F20002E0AB5 /* MGProfileViewController.swift */,
+				3FFFE78A1CF5652300855CAD /* MGSchedulingViewController.swift */,
+				3F9D75CA1D0859CD0052557D /* Schedule.storyboard */,
+				3F9D75CC1D08602F0052557D /* NewEventViewController.swift */,
+				3FB6674D1D164E3300012FF0 /* MGTeamViewController.swift */,
+			);
+			path = FindGame;
+			sourceTree = "<group>";
+		};
+		3F2DE39F1CF100B7002E0AB5 /* FindGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F2DE3A01CF100B7002E0AB5 /* FindGameTests.swift */,
+				3F2DE3A21CF100B7002E0AB5 /* Info.plist */,
+			);
+			path = FindGameTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F2DE3841CF100B7002E0AB5 /* FindGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2DE3A51CF100B7002E0AB5 /* Build configuration list for PBXNativeTarget "FindGame" */;
+			buildPhases = (
+				3F2DE3811CF100B7002E0AB5 /* Sources */,
+				3F2DE3821CF100B7002E0AB5 /* Frameworks */,
+				3F2DE3831CF100B7002E0AB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindGame;
+			productName = FindGame;
+			productReference = 3F2DE3851CF100B7002E0AB5 /* FindGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F2DE39B1CF100B7002E0AB5 /* FindGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2DE3A81CF100B7002E0AB5 /* Build configuration list for PBXNativeTarget "FindGameTests" */;
+			buildPhases = (
+				3F2DE3981CF100B7002E0AB5 /* Sources */,
+				3F2DE3991CF100B7002E0AB5 /* Frameworks */,
+				3F2DE39A1CF100B7002E0AB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F2DE39E1CF100B7002E0AB5 /* PBXTargetDependency */,
+			);
+			name = FindGameTests;
+			productName = FindGameTests;
+			productReference = 3F2DE39C1CF100B7002E0AB5 /* FindGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F2DE37D1CF100B7002E0AB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MDTMAC;
+				TargetAttributes = {
+					3F2DE3841CF100B7002E0AB5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = T2MXDNX6TM;
+					};
+					3F2DE39B1CF100B7002E0AB5 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3F2DE3841CF100B7002E0AB5;
+					};
+				};
+			};
+			buildConfigurationList = 3F2DE3801CF100B7002E0AB5 /* Build configuration list for PBXProject "FindGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F2DE37C1CF100B7002E0AB5;
+			productRefGroup = 3F2DE3861CF100B7002E0AB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F2DE3841CF100B7002E0AB5 /* FindGame */,
+				3F2DE39B1CF100B7002E0AB5 /* FindGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F2DE3831CF100B7002E0AB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEA9DB81D2B1B3C00D266BC /* starbucks_coffee.jpg in Resources */,
+				3FEA9DAF1D2B1B3C00D266BC /* photo-frame.png in Resources */,
+				3FEA9DB31D2B1B3C00D266BC /* egg_benedict.jpg in Resources */,
+				3FEA9DBA1D2B1B3C00D266BC /* japanese_noodle_with_pork.jpg in Resources */,
+				3FEA9DBF1D2B1B3C00D266BC /* noodle_with_bbq_pork.jpg in Resources */,
+				3FEA9DBE1D2B1B3C00D266BC /* instant_noodle_with_egg.jpg in Resources */,
+				3FEA9DBB1D2B1B3C00D266BC /* thai_shrimp_cake.jpg in Resources */,
+				3FEA9DB21D2B1B3C00D266BC /* hamburger.jpg in Resources */,
+				3FEA9DB71D2B1B3C00D266BC /* creme_brelee.jpg in Resources */,
+				3FEA9DB91D2B1B3C00D266BC /* vegetable_curry.jpg in Resources */,
+				3FEA9DB11D2B1B3C00D266BC /* ham_and_egg_sandwich.jpg in Resources */,
+				3FEA9DB51D2B1B3C00D266BC /* mushroom_risotto.jpg in Resources */,
+				3FEA9DB61D2B1B3C00D266BC /* full_breakfast.jpg in Resources */,
+				3F2DE3961CF100B7002E0AB5 /* LaunchScreen.storyboard in Resources */,
+				3F2DE3931CF100B7002E0AB5 /* Assets.xcassets in Resources */,
+				3F2DE38E1CF100B7002E0AB5 /* Main.storyboard in Resources */,
+				3FEA9DBD1D2B1B3C00D266BC /* green_tea.jpg in Resources */,
+				3FEA9DBC1D2B1B3C00D266BC /* angry_birds_cake.jpg in Resources */,
+				3FEA9DB01D2B1B3C00D266BC /* white_chocolate_donut.jpg in Resources */,
+				3FD8F23B1D051A5400003FDF /* Photos.plist in Resources */,
+				3F9D75CB1D0859CD0052557D /* Schedule.storyboard in Resources */,
+				3FEA9DB41D2B1B3C00D266BC /* ham_and_cheese_panini.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2DE39A1CF100B7002E0AB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F2DE3811CF100B7002E0AB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD8F2411D051A7500003FDF /* Photo.swift in Sources */,
+				3F2DE3AE1CF1102C002E0AB5 /* MGWallViewController.swift in Sources */,
+				3F2DE38B1CF100B7002E0AB5 /* LogInSignUpViewController.swift in Sources */,
+				3F2DE3B01CF11F20002E0AB5 /* MGProfileViewController.swift in Sources */,
+				3F2DE3B41CF13077002E0AB5 /* Helpers.swift in Sources */,
+				3F2DE3911CF100B7002E0AB5 /* FindGame.xcdatamodeld in Sources */,
+				3F2DE3891CF100B7002E0AB5 /* AppDelegate.swift in Sources */,
+				3F9D75CD1D08602F0052557D /* NewEventViewController.swift in Sources */,
+				3F2DE3B21CF1306D002E0AB5 /* TableViewCell.swift in Sources */,
+				3FD8F23D1D051A6500003FDF /* PhotoStreamViewController.swift in Sources */,
+				3FD8F23F1D051A6C00003FDF /* UIImage+Decompression.swift in Sources */,
+				3FD8F2431D051A9B00003FDF /* AnnotatedPhotoCell.swift in Sources */,
+				3FD8F2451D051AA000003FDF /* RoundedCornersView.swift in Sources */,
+				3FFFE78B1CF5652300855CAD /* MGSchedulingViewController.swift in Sources */,
+				3F2DE3AC1CF100FC002E0AB5 /* MGBaseViewController.swift in Sources */,
+				3FB6674E1D164E3300012FF0 /* MGTeamViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2DE3981CF100B7002E0AB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2DE3A11CF100B7002E0AB5 /* FindGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F2DE39E1CF100B7002E0AB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F2DE3841CF100B7002E0AB5 /* FindGame */;
+			targetProxy = 3F2DE39D1CF100B7002E0AB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F2DE38C1CF100B7002E0AB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2DE38D1CF100B7002E0AB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F2DE3941CF100B7002E0AB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2DE3951CF100B7002E0AB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F2DE3A31CF100B7002E0AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos8.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F2DE3A41CF100B7002E0AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos8.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F2DE3A61CF100B7002E0AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FindGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MDTMAC.FindGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F2DE3A71CF100B7002E0AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FindGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MDTMAC.FindGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F2DE3A91CF100B7002E0AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MDTMAC.FindGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindGame.app/FindGame";
+			};
+			name = Debug;
+		};
+		3F2DE3AA1CF100B7002E0AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MDTMAC.FindGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindGame.app/FindGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F2DE3801CF100B7002E0AB5 /* Build configuration list for PBXProject "FindGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2DE3A31CF100B7002E0AB5 /* Debug */,
+				3F2DE3A41CF100B7002E0AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2DE3A51CF100B7002E0AB5 /* Build configuration list for PBXNativeTarget "FindGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2DE3A61CF100B7002E0AB5 /* Debug */,
+				3F2DE3A71CF100B7002E0AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2DE3A81CF100B7002E0AB5 /* Build configuration list for PBXNativeTarget "FindGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2DE3A91CF100B7002E0AB5 /* Debug */,
+				3F2DE3AA1CF100B7002E0AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F2DE38F1CF100B7002E0AB5 /* FindGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F2DE3901CF100B7002E0AB5 /* FindGame.xcdatamodel */,
+			);
+			currentVersion = 3F2DE3901CF100B7002E0AB5 /* FindGame.xcdatamodel */;
+			path = FindGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F2DE37D1CF100B7002E0AB5 /* Project object */;
+}
